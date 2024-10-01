@@ -1,72 +1,222 @@
-body {
-    background-color: #53417b;
+/* 
+
+.purple__line {
+    width: 100vw; 
+    height: 10px; 
+    background-color: #C895FF; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 9999;
 }
 
-/* menu */
-.menu__list {
-    display: flex;              
-    justify-content: center;   
-    gap: 50px;                 
-    padding: 0;             
-    margin: 0;           
-    list-style: none;   
-    margin-top: 36px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Про мене */
-.aboutMe__title {
-    text-align: center;
-    margin-bottom: 10px;
+.header__title {
     font-size: 36px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.aboutMe__section {
-    text-align: center;
-    font-size: 18px;
     margin: 0;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+}
+
+.header__text {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.menu {
+    padding: 15px 0; 
+}
+
+.menu__list {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 133px; 
+    justify-content: flex-start; 
+    margin-left: 113px; 
+}
+
+.menu__item a {
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #333; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.menu__item a:hover {
+    background-color: #C895FF; 
+    color: white; 
+} */
+
+* {
+    font-family: "Jura", sans-serif; /* Применяем шрифт ко всем элементам */
+    font-optical-sizing: auto;
+    font-weight: 400; /* Замените на нужный вес */
     font-style: normal;
 }
-/* Роботи */
+
+/* Если хотите применить только к текстовым элементам, можно указать: */
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Jura", sans-serif; /* Применяем шрифт к заголовкам и тексту */
+    font-optical-sizing: auto;
+    font-weight: 400; /* Замените на нужный вес */
+    font-style: normal;
+}
+
+
 body {
-    background: linear-gradient(180deg, #a06ab5, #4e2a63);
-    font-family: 'Arial', sans-serif; /* Или другой шрифт */
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
+.purple__line {
+    background-color: #C895FF; 
+    height: 10px; 
+    width: 100%; 
 }
 
-.work__title {
-    margin-bottom: 30px;
-    font-size: 3rem; /* Увеличенный размер */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тень для текста */
+/* Контейнер заголовка */
+.header__container {
+    text-align: center;
+    padding-top: 8px; 
 }
 
-.work__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* Отступы между изображениями */
+
+/* Секция с заголовком */
+.title-section {
+    margin-bottom: 37px; 
 }
 
-.work__img {
-    height: 20%;
-    
-    border-radius: 15px; /* Округлые углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для изображений */
-    transition: transform 0.3s; /* Плавный эффект при наведении */
+.header__title {
+    font-size: 36px;
+    margin: 0;
 }
 
-.work__img:hover {
-    transform: scale(1.05); /* Увеличение изображения при наведении */
+.header__text {
+    font-size: 24px;
+    margin: 0;
+    color: #666;
+}
+
+/* Меню */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 113px; 
+    margin-bottom: 188px; 
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 133px; 
+    align-items: center;
+}
+
+.menu__item {
+    position: relative;
+    text-align: center;
+}
+
+.menu__item a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.1s ease; 
+}
+
+.menu__item a:hover {
+    color: #C895FF; 
+}
+
+
+.underline {
+    width: 122px; 
+    height: 1px; 
+    background-color: #C895FF; 
+    margin: 0 auto; 
+    margin-top: 5px;
+}
+
+/* Правый блок с записью и номером телефона */
+.right-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sign-up {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+.sign-up:hover {
+    color: #C895FF;
+}
+
+.phone-number {
+    font-size: 18px;
+    color: #333;
+}
+
+.phone-number:hover {
+    color: #C895FF;
+}
+
+/* Intro секция */
+.intro-section h2 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.intro-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+.metro-icon {
+    font-size: 18px;
+    color: #C895FF;
+}
+
+.intro__text {
+    text-align: center; 
+    color: #333; 
+    margin-top: 133px;
+    font-size: 28px;
+}
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px; 
+    }
+
+    .menu__list {
+        gap: 50px;
+    }
+
+    .right-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title-section {
+        margin-bottom: 20px; 
+    }
 }
 
