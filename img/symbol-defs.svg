@@ -1,0 +1,7 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="underline" viewBox="0 0 850 32">
+<path fill="none" stroke="#c895ff" style="stroke: var(--color1, #c895ff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="10.6667" d="M8.445 9.593c9.69 3.23 20.534 3.666 30.58 4.84 44.75 5.231 89.589 8.742 134.641 10.12 223.35 6.833 447.233-8.406 670.348-16.94"></path>
+</symbol>
+</defs>
+</svg>

@@ -175,14 +175,35 @@ body {
 }
 
 /* Intro секция */
+
+.rainbow-text {
+    display: inline-block; /* Позволяет тексту отображаться в одной строке */
+}
+
+.red { color: red; }
+.orange { color: orange; }
+.yellow { color: rgb(140, 152, 53); }
+.green { color: green; }
+.blue { color: blue; }
+.purple { color: purple; }
+
+
+
+
 .intro-section h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin: 0 0 10px 0;
 }
 
+.intro-section svg {
+    width: 250px;
+    height: 25px;
+}
+
 .intro-section p {
-    font-size: 16px;
+    font-size: 24px;
     color: #333;
+    margin-top: 5px ; 
 }
 
 .metro-icon {
@@ -219,4 +240,43 @@ body {
         margin-bottom: 20px; 
     }
 }
+
+@media (max-width: 480px) {
+    .menu {
+        margin: 0; /* Убираем отступы для мобильных устройств */
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    .menu__list {
+        gap: 20px; /* Уменьшаем расстояние между пунктами меню */
+        flex-direction: column; /* Меню будет вертикальным */
+        align-items: flex-start; /* Прилегание к левой части */
+    }
+
+    .menu__item {
+        width: 100%; /* Задаем ширину элементам меню для заполнения */
+    }
+
+    .purple__line {
+        height: 5px; /* Уменьшаем высоту линии для мобильных устройств */
+    }
+
+    .header__title {
+        font-size: 30px; /* Уменьшаем размер заголовка */
+    }
+
+    .header__text {
+        font-size: 20px; /* Уменьшаем размер текста под заголовком */
+    }
+
+    .intro-section h2 {
+        font-size: 24px; /* Уменьшаем размер заголовка секции интро */
+    }
+
+    .intro__text {
+        font-size: 24px; /* Уменьшаем размер текста в интро */
+    }
+}
+
+/* стерлка */
 
