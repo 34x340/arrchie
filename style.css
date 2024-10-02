@@ -218,29 +218,30 @@ body {
     font-size: 28px;
 }
 
+.underline__intro {
+    width: 589px; 
+    height: 1px; 
+    background-color: #C895FF; 
+    margin: 0 auto; 
+    margin-top: 5px;
+}
+
 /* nails */
 
-/* .nails__container {
+.nails__container {
     display: flex;
-    justify-content: center;
-    gap: 36px;
-    margin-top: 50px;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    gap: 20px; /* Отступы между изображениями */
+    justify-content: center; /* Центрируем элементы */
+    margin-top: 30px; /* Добавляем отступ сверху для размещения под интро */
 }
 
-.nails-1  {
-    height: 300px;
+.nails__container img {
+    width: 300px; /* Задаем ширину изображения */
+    height: 300px; /* Задаем высоту изображения */
+    object-fit: cover; /* Убедимся, что изображение заполняет область без деформации */
+    border-radius: 10px; /* Круглые углы (по желанию) */
 }
-.nails-2  {
-    height: 300px;
-}
-.nails-3  {
-    height: 300px;
-}
-.nails-4  {
-    height: 300px;
-}
- */
-
 
 /* Адаптивность */
 @media (max-width: 768px) {
@@ -262,7 +263,13 @@ body {
     .title-section {
         margin-bottom: 20px; 
     }
-}
+
+    /* ногти */
+    .nails__container img {
+        width: 48%; /* Изменяем ширину изображения, чтобы уместить два в ряд */
+        height: auto;
+    }
+}   
 
 @media (max-width: 480px) {
     .menu {
@@ -300,6 +307,14 @@ body {
         font-size: 24px; 
     }
 
+    .underline__intro {
+        width: 120px; 
+        height: 1px; 
+        background-color: #C895FF; 
+        margin: 0 auto; 
+        margin-top: 5px;
+    }
+
     .intro__text {
         text-align: center; 
         color: #333; 
@@ -307,5 +322,9 @@ body {
         font-size: 22px; /* Уменьшаем размер шрифта */
         padding: 0 15px; /* Добавляем отступы по бокам */
         word-wrap: break-word; /* Позволяет переносить слова */
-}
+        }
+    .nails__container img {
+            width: 100%; /* Одно изображение на строке для маленьких экранов */
+            height: auto;
+        }
 }
