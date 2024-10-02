@@ -57,17 +57,17 @@
 } */
 
 * {
-    font-family: "Jura", sans-serif; /* Применяем шрифт ко всем элементам */
+    font-family: "Jura", sans-serif; 
     font-optical-sizing: auto;
-    font-weight: 400; /* Замените на нужный вес */
+    font-weight: 400; 
     font-style: normal;
 }
 
-/* Если хотите применить только к текстовым элементам, можно указать: */
+
 h1, h2, h3, h4, h5, h6, p, a {
-    font-family: "Jura", sans-serif; /* Применяем шрифт к заголовкам и тексту */
+    font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Замените на нужный вес */
+    font-weight: 400; 
     font-style: normal;
 }
 
@@ -177,7 +177,7 @@ body {
 /* Intro секция */
 
 .rainbow-text {
-    display: inline-block; /* Позволяет тексту отображаться в одной строке */
+    display: inline-block; 
 }
 
 .red { color: red; }
@@ -218,6 +218,29 @@ body {
     font-size: 28px;
 }
 
+/* nails */
+
+/* .nails__container {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 50px;
+}
+
+.nails-1  {
+    height: 300px;
+}
+.nails-2  {
+    height: 300px;
+}
+.nails-3  {
+    height: 300px;
+}
+.nails-4  {
+    height: 300px;
+}
+ */
+
 
 /* Адаптивность */
 @media (max-width: 768px) {
@@ -243,40 +266,46 @@ body {
 
 @media (max-width: 480px) {
     .menu {
-        margin: 0; /* Убираем отступы для мобильных устройств */
-        padding: 10px; /* Уменьшаем внутренние отступы */
+        margin: 0;
+        padding: 10px; 
     }
 
     .menu__list {
-        gap: 20px; /* Уменьшаем расстояние между пунктами меню */
-        flex-direction: column; /* Меню будет вертикальным */
-        align-items: flex-start; /* Прилегание к левой части */
+        gap: 20px; 
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .menu__item {
-        width: 100%; /* Задаем ширину элементам меню для заполнения */
+        width: 100%;
     }
 
     .purple__line {
-        height: 5px; /* Уменьшаем высоту линии для мобильных устройств */
+        height: 5px;
     }
 
     .header__title {
-        font-size: 30px; /* Уменьшаем размер заголовка */
+        font-size: 30px; 
     }
 
     .header__text {
-        font-size: 20px; /* Уменьшаем размер текста под заголовком */
+        font-size: 20px; 
+    }
+
+    .intro-section {
+        margin-top: 30px;
     }
 
     .intro-section h2 {
-        font-size: 24px; /* Уменьшаем размер заголовка секции интро */
+        font-size: 24px; 
     }
 
     .intro__text {
-        font-size: 24px; /* Уменьшаем размер текста в интро */
-    }
+        text-align: center; 
+        color: #333; 
+        margin-top: 20px; /* Уменьшаем верхний отступ */
+        font-size: 22px; /* Уменьшаем размер шрифта */
+        padding: 0 15px; /* Добавляем отступы по бокам */
+        word-wrap: break-word; /* Позволяет переносить слова */
 }
-
-/* стерлка */
-
+}
