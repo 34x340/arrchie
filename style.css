@@ -113,7 +113,7 @@ body {
     justify-content: space-between;
     padding: 15px;
     margin: 0 113px; 
-    margin-bottom: 188px; 
+    margin-bottom: 100px; 
 }
 
 .menu__list {
@@ -243,6 +243,120 @@ body {
     border-radius: 10px; /* Круглые углы (по желанию) */
 }
 
+/* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы *//* чекбоксы */
+.calculate__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.calculate__item {
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    margin-bottom: 15px; /* Отступ между элементами */
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #c4c4c4;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 10px; /* Отступ между чекбоксом и текстом */
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #C895FF;
+    border-color: #C895FF;
+}
+
+.price {
+    font-size: 18px;
+    color: #333; /* Цвет текста */
+}
+/* чекбоксы */
+/* Центрирование всего контейнера */
+.calculate__container {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    margin-top: 20px;
+}
+
+/* Центрируем чекбокс и текст */
+.calculate__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание элементов по левому краю */
+}
+
+.calculate__item {
+    display: flex;
+    align-items: center; /* Выровнять чекбокс и текст по вертикали */
+    margin-bottom: 10px; /* Отступ между элементами */
+}
+
+/* Скрываем стандартный чекбокс */
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Контейнер для чекбокса */
+input[type="checkbox"] + label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #c4c4c4; /* Серый контур */
+    background-color: #f0f0f0; /* Серый фон по умолчанию */
+    cursor: pointer;
+    margin-right: 10px; /* Отступ между чекбоксом и текстом */
+}
+
+/* Стили при наведении */
+input[type="checkbox"] + label:hover {
+    background-color: #e0e0e0;
+}
+
+/* Стили для выбранного состояния */
+input[type="checkbox"]:checked + label {
+    background-color: #C895FF; /* Цвет фона при клике */
+    border-color: #C895FF; /* Цвет границы при клике */
+}
+
+/* Стили для текста */
+.calculate__container {
+    text-align: center; /* Центрируем текст */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.calculate__list {
+    margin-bottom: 20px; /* Отступ между списком и суммой */
+}
+
+.calculate__sum {
+    font-size: 18px; /* Размер шрифта для суммы */
+    margin-top: 15px; /* Отступ сверху */
+    margin-bottom: 36px;
+}
+.sign-up__calc {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.sign-up__calc:hover{
+    color: #C895FF;
+}
 /* Адаптивность */
 @media (max-width: 768px) {
     .menu {
